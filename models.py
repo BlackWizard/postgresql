@@ -132,6 +132,9 @@ class HStoreManager(HStoreManagerMixin, models.Manager):
     def get_query_set(self):
         return HStoreQueryset(self.model, using=self._db)
 
+class Manager(HStoreManager):
+    pass
+
 # Signal attaching
 from psycopg2.extras import register_hstore
 
