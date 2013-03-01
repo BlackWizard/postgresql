@@ -11,8 +11,7 @@ The library provides three principal classes:
 ``postgresql.fields.DictionaryField``
     An ORM field which stores a mapping of string key/value pairs in an hstore column.
 ``postgresql.fields.ReferencesField``
-    An ORM field which builds on DictionaryField to store a mapping of string keys to
-    django object references, much like ForeignKey.
+    An ORM field which builds on DictionaryField to store a mapping of string keys to django object references, much like ForeignKey.
 ``postgresql.models.Manager``
     An ORM manager which provides much of the query functionality of the library.
 
